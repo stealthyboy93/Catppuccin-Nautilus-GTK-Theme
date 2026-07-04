@@ -57,13 +57,13 @@ Works on any Linux distribution using Nautilus (GNOME Files), including:
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/<your-username>/catppuccin-nautilus-theme.git
+git clone https://github.com/stealthyboy93/Catppuccin-Nautilus-GTK-Theme.git
 ```
 
 ### 2. Open the project directory
 
 ```bash
-cd catppuccin-nautilus-theme
+cd Catppuccin-Nautilus-GTK-Theme
 ```
 
 ### 3. Make the installer executable
