@@ -101,7 +101,7 @@ Enjoy your new Catppuccin-themed Nautilus experience!
 MIT License.
 
 > [!NOTE]
-> This theme is designed specifically for **Nautilus (GNOME Files)** using **GTK 4.0**. It only customizes Nautilus and does **not** replace your system-wide GTK theme.
+> This theme is designed specifically for Nautilus (GNOME Files) using GTK 4.0. While it primarily customizes Nautilus, it also affects other GTK 4/libadwaita applications. It does not replace your system-wide GTK theme.
 > This project is open source under the **MIT License**. You're free to use, modify, and distribute the code. Contributions, improvements, and forks are always welcome.
 
 ## 🤝 Credits
