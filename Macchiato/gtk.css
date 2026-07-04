@@ -1,0 +1,95 @@
+/* ============================================================
+   Nautilus GTK4 Theme — Catppuccin Macchiato (pure recolor)
+   Location: ~/.config/gtk-4.0/gtk.css
+
+   This does NOT restyle any widget. It only redefines the
+   libadwaita named color variables that Nautilus already uses
+   internally, so the stock layout, borders, radii, spacing,
+   and hover/selection behavior stay exactly as-is — just the
+   palette changes.
+   ============================================================ */
+
+/* Catppuccin Macchiato palette */
+@define-color macchiato_base     #24273a;
+@define-color macchiato_mantle   #1e2030;
+@define-color macchiato_crust    #181926;
+@define-color macchiato_surface0 #363a4f;
+@define-color macchiato_surface1 #494d64;
+@define-color macchiato_surface2 #5b6078;
+@define-color macchiato_overlay0 #6e738d;
+@define-color macchiato_overlay1 #8087a2;
+@define-color macchiato_subtext0 #a5adcb;
+@define-color macchiato_subtext1 #b8c0e0;
+@define-color macchiato_text     #cad3f5;
+@define-color macchiato_mauve    #c6a0f6;
+@define-color macchiato_lavender #b7bdf8;
+@define-color macchiato_blue     #8aadf4;
+
+/* ------------------------------------------------------------
+   Core surfaces (window, content view, headerbar)
+   Nautilus keeps headerbar + content view the same tone, with
+   the sidebar one shade darker — matching stock behavior.
+   ------------------------------------------------------------ */
+@define-color window_bg_color      @macchiato_base;
+@define-color window_fg_color      @macchiato_text;
+
+@define-color view_bg_color        @macchiato_base;
+@define-color view_fg_color        @macchiato_text;
+
+@define-color headerbar_bg_color        @macchiato_base;
+@define-color headerbar_fg_color        @macchiato_text;
+@define-color headerbar_border_color    @macchiato_base;
+@define-color headerbar_backdrop_color  @macchiato_base;
+@define-color headerbar_shade_color     transparent;
+
+/* ------------------------------------------------------------
+   Sidebar
+   ------------------------------------------------------------ */
+@define-color sidebar_bg_color        @macchiato_mantle;
+@define-color sidebar_fg_color        @macchiato_subtext1;
+@define-color sidebar_backdrop_color  @macchiato_mantle;
+@define-color sidebar_border_color    @macchiato_mantle;
+@define-color sidebar_shade_color     transparent;
+
+@define-color secondary_sidebar_bg_color @macchiato_mantle;
+@define-color secondary_sidebar_fg_color @macchiato_subtext1;
+
+/* ------------------------------------------------------------
+   Sidebar font weight (bold labels only, no other UI change)
+   ------------------------------------------------------------ */
+placessidebar row label {
+    font-weight: bold;
+}
+
+/* ------------------------------------------------------------
+   Cards, popovers, dialogs (right-click menus, properties, etc.)
+   ------------------------------------------------------------ */
+@define-color card_bg_color     @macchiato_surface0;
+@define-color card_fg_color     @macchiato_text;
+@define-color card_shade_color  @macchiato_crust;
+
+@define-color dialog_bg_color   @macchiato_base;
+@define-color dialog_fg_color   @macchiato_text;
+
+@define-color popover_bg_color    @macchiato_mantle;
+@define-color popover_fg_color    @macchiato_text;
+@define-color popover_shade_color @macchiato_crust;
+
+/* ------------------------------------------------------------
+   Accent (selections, focus rings, checked/active states)
+   ------------------------------------------------------------ */
+@define-color accent_color     @macchiato_mauve;
+@define-color accent_bg_color  @macchiato_mauve;
+@define-color accent_fg_color  @macchiato_crust;
+
+/* ------------------------------------------------------------
+   Shade / scroll / misc structural tokens
+   ------------------------------------------------------------ */
+@define-color shade_color             alpha(black, 0.25);
+@define-color scrollbar_outline_color @macchiato_mantle;
+
+/* ------------------------------------------------------------
+   Text field colors (search bar, rename entries)
+   ------------------------------------------------------------ */
+@define-color text_view_bg_color @macchiato_surface0;
+@define-color text_view_fg_color @macchiato_text;

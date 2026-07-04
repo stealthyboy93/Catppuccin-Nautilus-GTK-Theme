@@ -1,0 +1,95 @@
+/* ============================================================
+   Nautilus GTK4 Theme — Catppuccin Latte (pure recolor)
+   Location: ~/.config/gtk-4.0/gtk.css
+
+   This does NOT restyle any widget. It only redefines the
+   libadwaita named color variables that Nautilus already uses
+   internally, so the stock layout, borders, radii, spacing,
+   and hover/selection behavior stay exactly as-is — just the
+   palette changes.
+   ============================================================ */
+
+/* Catppuccin Latte palette */
+@define-color latte_base      #eff1f5;
+@define-color latte_mantle    #e6e9ef;
+@define-color latte_crust     #dce0e8;
+@define-color latte_surface0  #ccd0da;
+@define-color latte_surface1  #bcc0cc;
+@define-color latte_surface2  #acb0be;
+@define-color latte_overlay0  #9ca0b0;
+@define-color latte_overlay1  #8c8fa1;
+@define-color latte_subtext0  #6c6f85;
+@define-color latte_subtext1  #5c5f77;
+@define-color latte_text      #4c4f69;
+@define-color latte_mauve     #8839ef;
+@define-color latte_lavender  #7287fd;
+@define-color latte_blue      #1e66f5;
+
+/* ------------------------------------------------------------
+   Core surfaces (window, content view, headerbar)
+   Nautilus keeps headerbar + content view the same tone, with
+   the sidebar one shade darker — matching stock behavior.
+   ------------------------------------------------------------ */
+@define-color window_bg_color      @latte_base;
+@define-color window_fg_color      @latte_text;
+
+@define-color view_bg_color        @latte_base;
+@define-color view_fg_color        @latte_text;
+
+@define-color headerbar_bg_color        @latte_base;
+@define-color headerbar_fg_color        @latte_text;
+@define-color headerbar_border_color    @latte_base;
+@define-color headerbar_backdrop_color  @latte_base;
+@define-color headerbar_shade_color     transparent;
+
+/* ------------------------------------------------------------
+   Sidebar
+   ------------------------------------------------------------ */
+@define-color sidebar_bg_color        @latte_mantle;
+@define-color sidebar_fg_color        @latte_subtext1;
+@define-color sidebar_backdrop_color  @latte_mantle;
+@define-color sidebar_border_color    @latte_mantle;
+@define-color sidebar_shade_color     transparent;
+
+@define-color secondary_sidebar_bg_color @latte_mantle;
+@define-color secondary_sidebar_fg_color @latte_subtext1;
+
+/* ------------------------------------------------------------
+   Sidebar font weight (bold labels only, no other UI change)
+   ------------------------------------------------------------ */
+placessidebar row label {
+    font-weight: bold;
+}
+
+/* ------------------------------------------------------------
+   Cards, popovers, dialogs (right-click menus, properties, etc.)
+   ------------------------------------------------------------ */
+@define-color card_bg_color     @latte_surface0;
+@define-color card_fg_color     @latte_text;
+@define-color card_shade_color  @latte_crust;
+
+@define-color dialog_bg_color   @latte_base;
+@define-color dialog_fg_color   @latte_text;
+
+@define-color popover_bg_color    @latte_mantle;
+@define-color popover_fg_color    @latte_text;
+@define-color popover_shade_color @latte_crust;
+
+/* ------------------------------------------------------------
+   Accent (selections, focus rings, checked/active states)
+   ------------------------------------------------------------ */
+@define-color accent_color     @latte_mauve;
+@define-color accent_bg_color  @latte_mauve;
+@define-color accent_fg_color  @latte_base;
+
+/* ------------------------------------------------------------
+   Shade / scroll / misc structural tokens
+   ------------------------------------------------------------ */
+@define-color shade_color             alpha(black, 0.15);
+@define-color scrollbar_outline_color @latte_mantle;
+
+/* ------------------------------------------------------------
+   Text field colors (search bar, rename entries)
+   ------------------------------------------------------------ */
+@define-color text_view_bg_color @latte_surface0;
+@define-color text_view_fg_color @latte_text;

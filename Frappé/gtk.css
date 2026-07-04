@@ -1,0 +1,95 @@
+/* ============================================================
+   Nautilus GTK4 Theme — Catppuccin Frappé (pure recolor)
+   Location: ~/.config/gtk-4.0/gtk.css
+
+   This does NOT restyle any widget. It only redefines the
+   libadwaita named color variables that Nautilus already uses
+   internally, so the stock layout, borders, radii, spacing,
+   and hover/selection behavior stay exactly as-is — just the
+   palette changes.
+   ============================================================ */
+
+/* Catppuccin Frappé palette */
+@define-color frappe_base      #303446;
+@define-color frappe_mantle    #292c3c;
+@define-color frappe_crust     #232634;
+@define-color frappe_surface0  #414559;
+@define-color frappe_surface1  #51576d;
+@define-color frappe_surface2  #626880;
+@define-color frappe_overlay0  #737994;
+@define-color frappe_overlay1  #838ba7;
+@define-color frappe_subtext0  #a5adce;
+@define-color frappe_subtext1  #b5bfe2;
+@define-color frappe_text      #c6d0f5;
+@define-color frappe_mauve     #ca9ee6;
+@define-color frappe_lavender  #babbf1;
+@define-color frappe_blue      #8caaee;
+
+/* ------------------------------------------------------------
+   Core surfaces (window, content view, headerbar)
+   Nautilus keeps headerbar + content view the same tone, with
+   the sidebar one shade darker — matching stock behavior.
+   ------------------------------------------------------------ */
+@define-color window_bg_color      @frappe_base;
+@define-color window_fg_color      @frappe_text;
+
+@define-color view_bg_color        @frappe_base;
+@define-color view_fg_color        @frappe_text;
+
+@define-color headerbar_bg_color        @frappe_base;
+@define-color headerbar_fg_color        @frappe_text;
+@define-color headerbar_border_color    @frappe_base;
+@define-color headerbar_backdrop_color  @frappe_base;
+@define-color headerbar_shade_color     transparent;
+
+/* ------------------------------------------------------------
+   Sidebar
+   ------------------------------------------------------------ */
+@define-color sidebar_bg_color        @frappe_mantle;
+@define-color sidebar_fg_color        @frappe_subtext1;
+@define-color sidebar_backdrop_color  @frappe_mantle;
+@define-color sidebar_border_color    @frappe_mantle;
+@define-color sidebar_shade_color     transparent;
+
+@define-color secondary_sidebar_bg_color @frappe_mantle;
+@define-color secondary_sidebar_fg_color @frappe_subtext1;
+
+/* ------------------------------------------------------------
+   Sidebar font weight (bold labels only, no other UI change)
+   ------------------------------------------------------------ */
+placessidebar row label {
+    font-weight: bold;
+}
+
+/* ------------------------------------------------------------
+   Cards, popovers, dialogs (right-click menus, properties, etc.)
+   ------------------------------------------------------------ */
+@define-color card_bg_color     @frappe_surface0;
+@define-color card_fg_color     @frappe_text;
+@define-color card_shade_color  @frappe_crust;
+
+@define-color dialog_bg_color   @frappe_base;
+@define-color dialog_fg_color   @frappe_text;
+
+@define-color popover_bg_color    @frappe_mantle;
+@define-color popover_fg_color    @frappe_text;
+@define-color popover_shade_color @frappe_crust;
+
+/* ------------------------------------------------------------
+   Accent (selections, focus rings, checked/active states)
+   ------------------------------------------------------------ */
+@define-color accent_color     @frappe_mauve;
+@define-color accent_bg_color  @frappe_mauve;
+@define-color accent_fg_color  @frappe_crust;
+
+/* ------------------------------------------------------------
+   Shade / scroll / misc structural tokens
+   ------------------------------------------------------------ */
+@define-color shade_color             alpha(black, 0.25);
+@define-color scrollbar_outline_color @frappe_mantle;
+
+/* ------------------------------------------------------------
+   Text field colors (search bar, rename entries)
+   ------------------------------------------------------------ */
+@define-color text_view_bg_color @frappe_surface0;
+@define-color text_view_fg_color @frappe_text;
