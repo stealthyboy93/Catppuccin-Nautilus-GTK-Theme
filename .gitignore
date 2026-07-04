@@ -1,0 +1,21 @@
+# Backup files
+*.backup
+*.bak
+*.old
+
+# Temporary files
+*~
+
+# Vim/Neovim swap files
+*.swp
+*.swo
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+
+# IDEs
+.vscode/
+.idea/
