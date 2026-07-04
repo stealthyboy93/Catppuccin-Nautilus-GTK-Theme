@@ -1,4 +1,4 @@
-# 🌿 **Catppuccin Nautilus Themes**
+# 𝐂𝐀𝐓𝐏𝐏𝐔𝐂𝐂𝐈𝐍 𝐍𝐀𝐔𝐓𝐈𝐋𝐔𝐒 𝐓𝐇𝐄𝐌𝐄𝐒
 A GTK 4.0 theme collection that brings the complete Catppuccin experience to Nautilus (GNOME Files). Featuring all four official flavors—Latte, Frappé, Macchiato, and Mocha—it delivers a clean, cohesive, and polished interface while preserving the native GNOME experience.
 
 
